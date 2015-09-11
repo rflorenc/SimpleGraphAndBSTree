@@ -1,33 +1,29 @@
 package graph;
 
-
 import java.awt.Graphics;
 import java.io.Serializable;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-
 class DrawCircles implements Serializable {
 
-    private LinkedList<Circle> circulos = new LinkedList<Circle>();
+    private LinkedList<Circle> circles = new LinkedList<Circle>();
     FrameGraph fg = new FrameGraph();
 
     public DrawCircles() {
-       
-        fg.dc=this;
+        fg.dc = this;
     }
 
-    public void addCirculo(Circle c) {
-        this.circulos.addLast(c);
+    public void addCircle(Circle c) {
+        this.circles.addLast(c);
     }
 
-    public void drawCirculos(Graphics g) {
+    public void drawCircle(Graphics g) {
         Circle cir = null;
-        Iterator<Circle> it = this.circulos.iterator();
+        Iterator<Circle> it = this.circles.iterator();
         while (it.hasNext()) {
             cir = it.next();
-            cir.drawCirculo(g);
+            cir.drawCircle(g);
         }
-
     }
 }

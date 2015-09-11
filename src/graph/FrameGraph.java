@@ -343,7 +343,7 @@ public class FrameGraph extends javax.swing.JFrame {
 
             System.out.println("\nVerify conected graph:");
             if (checkbox1.getState() == true) {
-                if (graph.GraphConexo(3) == true) {
+                if (graph.ConexGraph(3) == true) {
                     JOptionPane.showMessageDialog(null, "Connected graph");
                     System.out.println(" Connected graph");
                 } else {
@@ -355,7 +355,7 @@ public class FrameGraph extends javax.swing.JFrame {
 
                 return;
             } else if (checkbox2.getState() == true) {
-                if (graph.GraphConexo(2) == true) {
+                if (graph.ConexGraph(2) == true) {
                     JOptionPane.showMessageDialog(null, "Connected graph");
                     System.out.println(" Connected graph");
                 } else {
@@ -367,7 +367,7 @@ public class FrameGraph extends javax.swing.JFrame {
 
                 return;
             } else if (checkbox3.getState() == true) {
-                if (graph.GraphConexo(1) == true) {
+                if (graph.ConexGraph(1) == true) {
                     JOptionPane.showMessageDialog(null, "Connected graph");
                     System.out.println(" Connected graph");
 //                        JOptionPane.showMessageDialog(null, "\nConnected graph", "\nVerifição Tipo de Graph(" + j + ")", JOptionPane.INFORMATION_MESSAGE);
@@ -433,37 +433,37 @@ public class FrameGraph extends javax.swing.JFrame {
 
                 if (checkbox1.getState() == true) {
 
-                    if (gb1.inside(p) == true) {
+                    if (gb1.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
 
-                    } else if (gb2.inside(p) == true) {
+                    } else if (gb2.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
 
-                    } else if (gb3.inside(p) == true) {
+                    } else if (gb3.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
 
-                    } else if (gb4.inside(p) == true) {
+                    } else if (gb4.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
 
-                    } else if (gb5.inside(p) == true) {
+                    } else if (gb5.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
 
-                    } else if (gb6.inside(p) == true) {
+                    } else if (gb6.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
@@ -477,37 +477,37 @@ public class FrameGraph extends javax.swing.JFrame {
                     return;
 
                 } else if (checkbox2.getState() == true) {
-                    if (gb1.inside(p) == true) {
+                    if (gb1.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
-                    } else if (gb2.inside(p) == true) {
+                    } else if (gb2.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
-                    } else if (gb3.inside(p) == true) {
+                    } else if (gb3.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
-                    } else if (gb4.inside(p) == true) {
+                    } else if (gb4.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
-                    } else if (gb5.inside(p) == true) {
+                    } else if (gb5.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
-                    } else if (gb6.inside(p) == true) {
+                    } else if (gb6.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
-                    } else if (gb7.inside(p) == true) {
+                    } else if (gb7.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
@@ -519,48 +519,48 @@ public class FrameGraph extends javax.swing.JFrame {
                     return;
 
                 } else if (checkbox3.getState() == true) {
-                    if (gb1.inside(p) == true) {
+                    if (gb1.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
-                    } else if (gb2.inside(p) == true) {
+                    } else if (gb2.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
-                    } else if (gb3.inside(p) == true) {
+                    } else if (gb3.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
-                    } else if (gb4.inside(p) == true) {
+                    } else if (gb4.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
-                    } else if (gb5.inside(p) == true) {
+                    } else if (gb5.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
-                    } else if (gb6.inside(p) == true) {
+                    } else if (gb6.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
-                    } else if (gb7.inside(p) == true) {
+                    } else if (gb7.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
-                    } else if (gb8.inside(p) == true) {
+                    } else if (gb8.isInside(p) == true) {
                         g.drawOval((int) p.getX(), (int) p.getY(), raio, raio);
                         g.drawString("Select", (int) p.getX(), (int) p.getY());
                         g.setColor(Color.GREEN);
                         g.fillOval((int) p.getX(), (int) p.getY(), raio, raio);
                     } else {
-                        JOptionPane.showMessageDialog(null, "Outside.Please choose another position.", "Informação", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "You're outside...", "Info", JOptionPane.INFORMATION_MESSAGE);
                         this.JtabuleiroActionPerformed(null);
                     }
                     return;
@@ -660,55 +660,55 @@ public class FrameGraph extends javax.swing.JFrame {
             g.drawLine(200, 250, 300, 300); //p1 to p3
             g.setColor(Color.RED);
             g.drawString("40", 240, 280);
-            graph.Addarc(v1, v3, 40);
+            graph.addArch(v1, v3, 40);
 
             g.setColor(Color.WHITE);
             g.drawLine(300, 300, 250, 110); //p3 to p2
             g.setColor(Color.RED);
             g.drawString("50", 270, 200);
-            graph.Addarc(v3, v2, 50);
+            graph.addArch(v3, v2, 50);
 
             g.setColor(Color.WHITE);
             g.drawLine(250, 110, 80, 300); // p2 to p5
             g.setColor(Color.RED);
             g.drawString("20", 160, 200);
-            graph.Addarc(v2, v5, 20);
+            graph.addArch(v2, v5, 20);
 
             g.setColor(Color.WHITE);
             g.drawLine(300, 300, 70, 50); //p3 to p6
             g.setColor(Color.RED);
             g.drawString("60", 160, 150);
-            graph.Addarc(v3, v6, 60);
+            graph.addArch(v3, v6, 60);
 
             g.setColor(Color.WHITE);
             g.drawLine(70, 50, 80, 300); //p6 to p5
             g.setColor(Color.RED);
             g.drawString("45", 60, 180);
-            graph.Addarc(v6, v5, 45);
+            graph.addArch(v6, v5, 45);
 
             g.setColor(Color.WHITE);
             g.drawLine(80, 300, 300, 300); // p5 to p3
             g.setColor(Color.RED);
             g.drawString("55", 180, 300);
-            graph.Addarc(v5, v3, 55);
+            graph.addArch(v5, v3, 55);
 
             g.setColor(Color.WHITE);
             g.drawLine(450, 150, 70, 50); // p4 to p6
             g.setColor(Color.RED);
             g.drawString("10", 280, 100);
-            graph.Addarc(v4, v6, 10);
+            graph.addArch(v4, v6, 10);
 
             g.setColor(Color.WHITE);
             g.drawLine(250, 110, 70, 50); // p2 to p6
             g.setColor(Color.RED);
             g.drawString("70", 180, 100);
-            graph.Addarc(v2, v6, 70);
+            graph.addArch(v2, v6, 70);
 
             g.setColor(Color.WHITE);
             g.drawLine(300, 300, 450, 150); // p3 to p4
             g.setColor(Color.RED);
             g.drawString("65", 370, 220);
-            graph.Addarc(v3, v4, 65);
+            graph.addArch(v3, v4, 65);
 
             // total vertices
             jLabel2.setText(String.valueOf(graph.Vertices() - 2));  
@@ -760,73 +760,73 @@ public class FrameGraph extends javax.swing.JFrame {
             g.drawLine(200, 250, 250, 110); // p1 to p2
             g.setColor(Color.DARK_GRAY);
             g.drawString("30", 210, 200);
-            graph.Addarc(v1, v2, 30);
+            graph.addArch(v1, v2, 30);
 
             g.setColor(Color.WHITE);
             g.drawLine(200, 250, 300, 300); //p1 to p3
             g.setColor(Color.DARK_GRAY);
             g.drawString("40", 240, 280);
-            graph.Addarc(v1, v3, 40);
+            graph.addArch(v1, v3, 40);
 
             g.setColor(Color.WHITE);
             g.drawLine(300, 300, 250, 110); //p3 to p2
             g.setColor(Color.DARK_GRAY);
             g.drawString("50", 270, 200);
-            graph.Addarc(v3, v2, 50);
+            graph.addArch(v3, v2, 50);
 
             g.setColor(Color.WHITE);
             g.drawLine(250, 110, 80, 300); // p2 to p5
             g.setColor(Color.DARK_GRAY);
             g.drawString("20", 160, 200);
-            graph.Addarc(v2, v5, 20);
+            graph.addArch(v2, v5, 20);
 
             g.setColor(Color.WHITE);
             g.drawLine(300, 300, 70, 50); //p3 to p6
             g.setColor(Color.DARK_GRAY);
             g.drawString("60", 160, 150);
-            graph.Addarc(v3, v6, 60);
+            graph.addArch(v3, v6, 60);
 
             g.setColor(Color.WHITE);
             g.drawLine(70, 50, 80, 300); //p6 to p5
             g.setColor(Color.DARK_GRAY);
             g.drawString("45", 60, 180);
-            graph.Addarc(v6, v5, 45);
+            graph.addArch(v6, v5, 45);
 
             g.setColor(Color.WHITE);
             g.drawLine(80, 300, 300, 300); // p5 to p3
             g.setColor(Color.DARK_GRAY);
             g.drawString("55", 180, 300);
-            graph.Addarc(v5, v3, 55);
+            graph.addArch(v5, v3, 55);
 
             g.setColor(Color.WHITE);
             g.drawLine(450, 150, 70, 50); // p4 to p6
             g.setColor(Color.DARK_GRAY);
             g.drawString("10", 280, 100);
-            graph.Addarc(v4, v6, 10);
+            graph.addArch(v4, v6, 10);
 
             g.setColor(Color.WHITE);
             g.drawLine(250, 110, 70, 50); // p2 to p6
             g.setColor(Color.DARK_GRAY);
             g.drawString("70", 180, 100);
-            graph.Addarc(v2, v6, 70);
+            graph.addArch(v2, v6, 70);
 
             g.setColor(Color.WHITE);
             g.drawLine(300, 300, 450, 150); // p3 to p4
             g.setColor(Color.DARK_GRAY);
             g.drawString("65", 370, 220);
-            graph.Addarc(v3, v4, 65);
+            graph.addArch(v3, v4, 65);
 
             g.setColor(Color.WHITE);
             g.drawLine(450, 150, 460, 380); // p4 to p7
             g.setColor(Color.DARK_GRAY);
             g.drawString("50", 455, 260);
-            graph.Addarc(v4, v7, 50);
+            graph.addArch(v4, v7, 50);
 
             g.setColor(Color.WHITE);
             g.drawLine(460, 380, 300, 300); // p7 to p3
             g.setColor(Color.DARK_GRAY);
             g.drawString("80", 360, 339);
-            graph.Addarc(v7, v3, 80);
+            graph.addArch(v7, v3, 80);
 
             jLabel2.setText(String.valueOf(graph.Vertices() - 1));  //mostra o total de Vertices
             g.dispose();
@@ -882,103 +882,103 @@ public class FrameGraph extends javax.swing.JFrame {
             g.drawLine(200, 250, 250, 110); // p1 to p2
             g.setColor(Color.RED);
             g.drawString("30", 210, 200);
-            graph.Addarc(v1, v2, 30);
+            graph.addArch(v1, v2, 30);
 
             g.setColor(Color.WHITE);
             g.drawLine(200, 250, 300, 300); //p1 to p3
             g.setColor(Color.RED);
             g.drawString("40", 240, 280);
-            graph.Addarc(v1, v3, 40);
+            graph.addArch(v1, v3, 40);
 
             g.setColor(Color.WHITE);
             g.drawLine(300, 300, 250, 110); //p3 to p2
             g.setColor(Color.RED);
             g.drawString("50", 270, 200);
-            graph.Addarc(v3, v2, 50);
+            graph.addArch(v3, v2, 50);
 
             g.setColor(Color.WHITE);
             g.drawLine(250, 110, 80, 300); // p2 to p5
             g.setColor(Color.RED);
             g.drawString("20", 160, 200);
-            graph.Addarc(v2, v5, 20);
+            graph.addArch(v2, v5, 20);
 
             g.setColor(Color.WHITE);
             g.drawLine(300, 300, 70, 50); //p3 to p6
             g.setColor(Color.RED);
             g.drawString("60", 160, 150);
-            graph.Addarc(v3, v6, 60);
+            graph.addArch(v3, v6, 60);
 
             g.setColor(Color.WHITE);
             g.drawLine(70, 50, 80, 300); //p6 to p5
             g.setColor(Color.RED);
             g.drawString("45", 60, 180);
-            graph.Addarc(v6, v5, 45);
+            graph.addArch(v6, v5, 45);
 
             g.setColor(Color.WHITE);
             g.drawLine(80, 300, 300, 300); // p5 to p3
             g.setColor(Color.RED);
             g.drawString("55", 180, 300);
-            graph.Addarc(v5, v3, 55);
+            graph.addArch(v5, v3, 55);
 
             g.setColor(Color.WHITE);
             g.drawLine(450, 150, 70, 50); // p4 to p6
             g.setColor(Color.RED);
             g.drawString("10", 280, 100);
-            graph.Addarc(v4, v6, 10);
+            graph.addArch(v4, v6, 10);
 
             g.setColor(Color.WHITE);
             g.drawLine(250, 110, 70, 50); // p2 to p6
             g.setColor(Color.RED);
             g.drawString("70", 180, 100);
-            graph.Addarc(v2, v6, 70);
+            graph.addArch(v2, v6, 70);
 
             g.setColor(Color.WHITE);
             g.drawLine(300, 300, 450, 150); // p3 to p4
             g.setColor(Color.RED);
             g.drawString("65", 370, 220);
-            graph.Addarc(v3, v4, 65);
+            graph.addArch(v3, v4, 65);
 
             g.setColor(Color.WHITE);
             g.drawLine(450, 150, 460, 380); // p4 to p7
             g.setColor(Color.RED);
             g.drawString("50", 455, 260);
-            graph.Addarc(v4, v7, 50);
+            graph.addArch(v4, v7, 50);
 
             g.setColor(Color.WHITE);
             g.drawLine(460, 380, 300, 300); // p7 to p3
             g.setColor(Color.RED);
             g.drawString("80", 360, 339);
-            graph.Addarc(v7, v3, 80);
+            graph.addArch(v7, v3, 80);
 
             g.setColor(Color.WHITE);
             g.drawLine(460, 380, 250, 110); // p7 to p2
             g.setColor(Color.RED);
             g.drawString("50", 340, 240);
-            graph.Addarc(v7, v2, 50);
+            graph.addArch(v7, v2, 50);
 
             g.setColor(Color.WHITE);
             g.drawLine(460, 380, 460, 80); // p7 to p8
             g.setColor(Color.RED);
             g.drawString("25", 460, 200);
-            graph.Addarc(v7, v8, 25);
+            graph.addArch(v7, v8, 25);
 
             g.setColor(Color.WHITE);
             g.drawLine(460, 80, 450, 150); // p8 to p4
             g.setColor(Color.RED);
             g.drawString("80", 450, 120);
-            graph.Addarc(v8, v4, 80);
+            graph.addArch(v8, v4, 80);
 
             g.setColor(Color.WHITE);
             g.drawLine(460, 80, 80, 300); // p8 to p5
             g.setColor(Color.RED);
             g.drawString("30", 250, 200);
-            graph.Addarc(v8, v5, 30);
+            graph.addArch(v8, v5, 30);
 
             g.setColor(Color.WHITE);
             g.drawLine(460, 80, 460, 380); // p8 to p7
             g.setColor(Color.RED);
             g.drawString("20", 460, 200);
-            graph.Addarc(v8, v7, 20);
+            graph.addArch(v8, v7, 20);
 
             jLabel2.setText(String.valueOf(graph.Vertices()));  //mostra o total de Vertices
             g.dispose();

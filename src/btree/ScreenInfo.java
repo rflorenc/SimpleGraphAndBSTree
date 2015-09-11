@@ -24,7 +24,7 @@ public class ScreenInfo implements Comparable {
 
             if (division == 'H') {
                 // Compare y
-                double r = point.distanciaY(info.getPoint());
+                double r = point.distanceY(info.getPoint());
                 System.out.println("ScreenInfo - compareTo(): r = " + r);
                 if (r < 0) {
                     return -1;
@@ -35,7 +35,7 @@ public class ScreenInfo implements Comparable {
                 }
             } else if (division == 'V') {
                 // Compare x
-                double r = point.distanciaX(info.getPoint());
+                double r = point.distanceX(info.getPoint());
                 System.out.println("ScreenInfo - compareTo(): r = " + r);
                 if (r < 0) {
                     return -1;
